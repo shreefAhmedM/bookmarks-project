@@ -1,8 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-  </body>
+    <meta charset="UTF-8" />
+    <title>Bookmarks</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="script.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <h1>Bookmark Manager</h1>
+
+        <label for="userSelect">Select User</label>
+        <select id="userSelect">
+            <option value="">-- Choose a user --</option>
+        </select>
+
+        <section>
+            <h2>Add Bookmark</h2>
+
+            <form id="bookmarkForm">
+                <label for="url">URL</label>
+                <input id="url" type="url" required>
+
+                <label for="title">Title</label>
+                <input id="title" type="text" required>
+
+                <label for="description">Description</label>
+                <input id="description" type="text" required>
+
+                <button type="submit">Add Bookmark</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Bookmarks</h2>
+            <div id="bookmarks"></div>
+        </section>
+    </main>
+</body>
 </html>
