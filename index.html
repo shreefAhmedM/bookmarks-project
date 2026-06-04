@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Bookmarks</title>
-    <link rel="stylesheet" href="style.css" />
-    <script type="module" src="script.js" defer></script>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Bookmarks</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="script.js" defer></script>
 </head>
 
 <body>
-    <main>
-        <h1>Bookmark Manager</h1>
+  <main>
+    <h1>Bookmark Manager</h1>
 
-        <label for="userSelect">Select User</label>
-        <select id="userSelect">
-            <option value="">-- Choose a user --</option>
-        </select>
+    <label for="userSelect">Select User</label>
+    <select id="userSelect">
+      <option value="">-- Choose a user --</option>
+    </select>
 
-        <section>
-            <h2>Add Bookmark</h2>
+    <section>
+      <h2>Add Bookmark</h2>
 
-            <form id="bookmarkForm">
-                <label for="url">URL</label>
-                <input id="url" type="url" required>
+      <form id="bookmarkForm">
+        <label for="url">URL</label>
+        <input id="url" type="url" required>
 
-                <label for="title">Title</label>
-                <input id="title" type="text" required>
+        <label for="title">Title</label>
+        <input id="title" type="text" required>
 
-                <label for="description">Description</label>
-                <input id="description" type="text" required>
+        <label for="description">Description</label>
+        <input id="description" type="text" required>
 
-                <button type="submit">Add Bookmark</button>
-            </form>
-        </section>
+        <button type="submit">Add Bookmark</button>
+      </form>
+    </section>
 
-        <section>
-            <h2>Bookmarks</h2>
-            <div id="bookmarks"></div>
-        </section>
-    </main>
+    <section>
+      <h2>Bookmarks</h2>
+      <button id="clearBookmarks">Clear My Bookmarks</button>
+      <div id="bookmarks"></div>
+    </section>
+  </main>
 </body>
 </html>

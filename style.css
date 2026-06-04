@@ -1,20 +1,90 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f5f7fa;
 }
 
 main {
     max-width: 600px;
+    max-width: 700px;
+    margin: 0 auto;
+    background: rgb(226, 213, 224);
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
-
+h1 {
+    margin-top: 0;
+    text-align: center;
+}
+section {
+    margin-top: 25px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 .bookmark {
     border: 1px solid #ddd;
     padding: 10px;
     margin-top: 10px;
 }
 
+input,
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button[type="submit"] {
+    background-color: hsl(120, 81%, 6%);
+    color: white;
+    
+}
+#clearBookmarks {
+    background-color: #370302;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.bookmark {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-top: 12px;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+
 .bookmark a {
     font-weight: bold;
-    color: rgb(136, 136, 218);
+    color: #3366cc;
     text-decoration: none;
+    font-size: 18px;
+}
+
+.bookmark a:hover {
+    text-decoration: underline;
+}
+
+.bookmark p {
+    margin: 6px 0;
+    color: #555;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 5px;
 }
